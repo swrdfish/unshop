@@ -31,23 +31,23 @@ public interface Admin {
      * Returns the routes to be registered for the admin interface
      * @return
      */
-    RouteGroup getRouter();
+    RouteGroup getRoutes();
 
     /**
      * Creates a new admin resource but does not add it.
-     * @param model the model to manage
+     * @param modelClass the model to manage
      * @param configs
      * @return newly created resource
      */
-    AdminResource newResource(Model model, AdminConfig ...configs);
+    AdminResource newResource(Class<? extends Model> modelClass, AdminConfig ...configs);
 
     /**
      * Creates a new resource and adds it to the admin interface.
-     * @param model the model to manage
+     * @param modelClass the model class to manage
      * @param configs
      * @return return the added resource instance
      */
-    AdminResource addResource(Model model, AdminConfig ...configs);
+    AdminResource addResource(Class< ? extends Model> modelClass, AdminConfig ...configs);
 
     /**
      * Adds the resource to the admin interface.
