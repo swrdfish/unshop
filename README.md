@@ -8,4 +8,4 @@ From the top level execute:
 
 Run Instructions
 ----------------
-java -jar unshop-example-1.0-SNAPSHOT-jar-with-dependencies.jar
+`java -jar unshop-example-1.0-SNAPSHOT-jar-with-dependencies.jar`
